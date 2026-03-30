@@ -14,7 +14,7 @@ function Hero({ selectedCharacter }) {
           
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--color-purple-100),_var(--color-purple-200))] opacity-80 mix-blend-multiply z-0 pointer-events-none"></div>
 
-          <div className="absolute inset-0 z-10 flex flex-col md:flex-row w-full h-full">
+          <div className="absolute inset-0 z-10 flex flex-col-reverse md:flex-row w-full h-full">
 
             <div className="w-full md:w-[65%] h-[50%] md:h-full flex flex-col justify-end items-start md:px-12 pointer-events-none relative z-20">
               <img src={selectedCharacter.image} alt={selectedCharacter.name} className="w-full h-[110%] md:h-full object-contain object-bottom drop-shadow-[0_0_25px_rgba(0,0,0,0.6)] origin-bottom" />
