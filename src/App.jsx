@@ -2,10 +2,16 @@ import Hero from "./Components/hero/hero"
 import floral_pattern from "./assets/img/floral_pattern.png"
 import Bar from "./Components/bar/bar"
 import Cards from "./Components/cards/cards"
+import { useState } from "react"
 
 function App() {
+  
+    const [selectedCharacter, setSelectedCharacter] = useState(null);
+    
+   
 
   return (
+
     <div className="relative min-h-screen bg-[radial-gradient(circle_at_center,_var(--color-green-dark-100),_var(--color-green-dark-200))]">
 
       <div 
@@ -17,8 +23,8 @@ function App() {
       <div className="relative z-10 flex flex-col md:flex-row min-h-screen">
         <Bar />
         <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
-          <Hero />
-          <Cards />
+          <Hero selectedCharacter={selectedCharacter} />
+          <Cards onSelectCharacter={setSelectedCharacter} selectedCharacter={selectedCharacter} />
         </div>
       </div>
     </div>
