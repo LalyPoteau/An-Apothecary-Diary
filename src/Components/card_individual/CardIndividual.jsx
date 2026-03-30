@@ -11,7 +11,7 @@ function CardsIndividual({name, image, bg_gif, description, onSelectCharacter, s
   return (
     <div 
       onClick={handleSelectCharacter} 
-      className="w-[400px] min-w-[400px] shrink-0 snap-center min-h-[500px] h-[75vh] md:h-[700px] rounded-3xl bg-[radial-gradient(circle_at_center,_var(--color-purple-100),_var(--color-purple-200))] overflow-hidden shadow-2xl relative cursor-pointer transition-all duration-300 hover:-translate-y-2"
+      className={`w-[400px] min-w-[400px] shrink-0 snap-center min-h-[500px] h-[75vh] md:h-[700px] rounded-3xl bg-[radial-gradient(circle_at_center,_var(--color-purple-100),_var(--color-purple-200))] overflow-hidden shadow-2xl relative cursor-pointer transition-all duration-300 hover:-translate-y-2 ${isSelected ? "border-1 border-better-white" : ""}`}
     >
       <img 
         src={image} 
