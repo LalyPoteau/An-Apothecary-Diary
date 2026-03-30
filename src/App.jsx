@@ -16,7 +16,7 @@ function App() {
 
       <div className="relative z-10 flex flex-col md:flex-row min-h-screen">
         <Bar />
-        <div className="flex flex-col w-full flex-1">
+        <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
           <Hero />
           <Cards />
         </div>
