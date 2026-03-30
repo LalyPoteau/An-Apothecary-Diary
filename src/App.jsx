@@ -1,6 +1,7 @@
 import Hero from "./Components/hero/hero"
 import floral_pattern from "./assets/img/floral_pattern.png"
 import Bar from "./Components/bar/bar"
+import Cards from "./Components/cards/cards"
 
 function App() {
 
@@ -15,8 +16,9 @@ function App() {
 
       <div className="relative z-10 flex flex-col md:flex-row min-h-screen">
         <Bar />
-        <div className="flex-1 w-full relative">
+        <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
           <Hero />
+          <Cards />
         </div>
       </div>
     </div>
