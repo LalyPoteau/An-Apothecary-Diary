@@ -1,6 +1,22 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Miskan';
+  src: url('./assets/typi/miskan/Miskan.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Miskan';
+  src: url('./assets/typi/miskan/Miskan Oblique.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 @theme {
+    --font-miskan: 'Miskan', sans-serif;
 
     --color-green-light: oklch(0.591 0.0923 144.3);
     --color-green-medium: oklch(0.5928 0.0957 144.25);
